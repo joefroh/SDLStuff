@@ -1,0 +1,85 @@
+2D RTS
+
+A persistent real time strategy/building simulator. You control a piece of land and must grow it into a vibrant village, castle, citadel.
+
+Art style: Pixel Art - example http://steamcommunity.com/sharedfiles/filedetails/?id=103545356
+
+Castle building will be similar to any RTS, where we have a few premade buildings that provide different resources, and different sets of walls. Find a good mix between the simple RTS style, and a complicated building simulator so players can fully customize their village. 
+
+
+Gameplay
+========
+
+Beginning (First 20 minutes)
+You start off as one character, a lord. The character is placed in an AI village where all new spawns go. Right Click where you want your character to go, right click items as your action button. 
+
+You have enough money to buy a small piece of land, select any available square and purchase it. Then you start chopping down trees to get enough wood to build your first hut. Hire some AI's to do it for you.
+
+Expand to farming, and mining all while hiring more AI's to do the work for you. Start improving your piece of land with defences like walls from the wood. 
+
+Start building a barracks, and a small army. You need housing for all your workers and military, so you are limited by your huts size.
+
+Middle (20 - 10 hours)
+There should be a large focus on the city simulator here. Where the more money you make, the bigger your land becomes, the more workers you hire and more people you have living within your castle.
+
+There are rare resource(crystals) far away from the spawn point. There is also a lot of dangerous AI's in the way. Take your army and workers to go mine those resources.
+
+End Game (10+ hours)
+Your goal is to have the nicest/safest castle. You will need rare resources to build the high level/specialization buildings. 
+
+Timeline
+Since the game gets complex real fast, here's where we start.
+Alpha:
+1. Player Sprite
+2. Stats: Health, Money
+3. Movement, where you click
+4. Environmental Sprites, grass, trees, water.
+5. Actions: Cut tree's get money, farm get money.
+6. Buy land, your character owns it. 
+
+Next Stages:
+V 0.2
+Building simulator. 
+V 0.3 
+AI farming/harvesting
+V 0.4
+AI Attack/army
+V 0.5 
+Health system
+Bandits
+
+In the future:
+Make it persistent multi-player like Minecraft. Where you see your friends castle progress. Trade with other players. A whole economy where the value of wood goes down and up due to supply and demand. Land prices fluctuate depending on demand (closeness to main spawn point).
+
+JOEYS COMMENTS:
+
+So this is essentially Spore x Warcraft x Minecraft x Gnome World?
+
+I like it although I am not sure about the moba stuff... If we are gonna have it be a multypresent world with friends etc, how would we handle inter-castle fighting
+or would people only be allowed to HELP not hurt.
+
+Also OF COURSE DILLON HAS A GAME WITH A COMMODITIES MARKET lol
+
+I'm down although I dont know how far we would get.
+
+Dillon's Reply:
+I don't like calling it a mix of games, because in reality all games are like that. The best way I can describe it is a persistant RTS. What makes it different is that as you get bigger, 
+you'll have to deal with the many problems that plague a big city (people starve, not enough space for people to live) like in any city simulator. Or think of it like EVE Online, the huge ass ships are powerful,
+but still need all their small vessels in their fleet for an attack. There are pro's and cons to your city size.
+
+Moba style was the wrong word, I just meant RTS style (starcraft) for controlling characters. Highlight them, then click where you want them to go.
+
+Inter castle fighting is a hard one. Let's say we implement a full rts (starcraft) style combat system, what happens when you destroy someone elses base? Do you get their land? Does the land just stay there as a ruin?
+I have a couple ideas: You can only raid other peoples castles, which means you can take all their resources but not destroy any buildings.
+OR if you destroy their entire base, you must pay them for their land so they can start again elsewhere, while you expand your kingdom!
+OR no PvP. There will be PvE elements for the most part, so maybe you can team up against the evil north of the wall...
+
+ALL I EVER WANTED TO DO IS WRITE A REALLY COOL ECONOMY SYSTEM, LET MY DREAM BE FUFILLED! 
+
+It's ambitious for sure, and I tried to keep most of it code heavy, not sprites or game objects which should be easier for us. If we can just finish the stuff I outlined in the Alpha, then it will be a success.
+
+JOEY:
+Do you know how to do software architectural mock ups? I am curious how you think this all falls together from a code perspective, or even an interaction chain. My biggest concern is that to me we are
+mixing gaming metaphors. We are an RTS and a city builder? Those are 2 very different interaction chains. I'm not saying its not possible, and I am totally down to try, but I am just trying to predict
+what our pinch points will be in the code so that we can think about solving them at the architecture level instead of trying to hack shit in later when we come across a bug or requirement we didnt
+anticipate.
